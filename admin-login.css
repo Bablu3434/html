@@ -1,0 +1,211 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+
+    background:linear-gradient(135deg,#0f172a,#1e293b,#334155);
+
+}
+
+.login-container{
+
+    width:100%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+}
+
+.login-box{
+
+    width:420px;
+
+    background:#ffffff;
+
+    border-radius:15px;
+
+    padding:40px;
+
+    box-shadow:0 15px 35px rgba(0,0,0,.35);
+
+    animation:fadeIn .5s ease;
+
+}
+
+.logo{
+
+    text-align:center;
+
+    margin-bottom:30px;
+
+}
+
+.logo i{
+
+    font-size:60px;
+
+    color:#ff6b00;
+
+    margin-bottom:15px;
+
+}
+
+.logo h1{
+
+    font-size:30px;
+
+    color:#222;
+
+}
+
+.logo p{
+
+    color:#777;
+
+    margin-top:5px;
+
+}
+
+.input-box{
+
+    position:relative;
+
+    margin-bottom:20px;
+
+}
+
+.input-box input{
+
+    width:100%;
+
+    padding:15px 45px;
+
+    border:1px solid #ccc;
+
+    border-radius:10px;
+
+    outline:none;
+
+    font-size:16px;
+
+}
+
+.input-box input:focus{
+
+    border-color:#ff6b00;
+
+}
+
+.input-box i{
+
+    position:absolute;
+
+    left:15px;
+
+    top:50%;
+
+    transform:translateY(-50%);
+
+    color:#666;
+
+}
+
+#togglePassword{
+
+    position:absolute;
+
+    right:15px;
+
+    top:50%;
+
+    transform:translateY(-50%);
+
+    cursor:pointer;
+
+    color:#666;
+
+}
+
+button{
+
+    width:100%;
+
+    padding:15px;
+
+    border:none;
+
+    border-radius:10px;
+
+    background:#ff6b00;
+
+    color:white;
+
+    font-size:18px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+button:hover{
+
+    background:#e55d00;
+
+}
+
+.back{
+
+    text-align:center;
+
+    margin-top:20px;
+
+}
+
+.back a{
+
+    text-decoration:none;
+
+    color:#ff6b00;
+
+    font-weight:bold;
+
+}
+
+@keyframes fadeIn{
+
+    from{
+
+        opacity:0;
+        transform:translateY(-20px);
+
+    }
+
+    to{
+
+        opacity:1;
+        transform:translateY(0);
+
+    }
+
+}
+
+@media(max-width:480px){
+
+    .login-box{
+
+        width:90%;
+        padding:25px;
+
+    }
+
+}
