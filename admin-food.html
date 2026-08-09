@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Food Management | Royal Stay Hotel</title>
+
+    <link rel="stylesheet" href="admin-food.css">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+
+<body>
+
+<header>
+
+    <nav class="navbar">
+
+        <div class="logo">
+            <h2>🍽 Royal Stay Hotel Admin</h2>
+        </div>
+
+        <ul>
+
+            <li><a href="admin.html">Dashboard</a></li>
+
+            <li><a href="admin-food.html" class="active">Food</a></li>
+
+            <li><a href="index.html">Home</a></li>
+
+            <li>
+                <button onclick="logout()" class="logout-btn">
+                    Logout
+                </button>
+            </li>
+
+        </ul>
+
+    </nav>
+
+</header>
+
+<section class="container">
+
+    <div class="left">
+
+        <h2>Add New Food</h2>
+
+        <form id="foodForm">
+
+            <input
+                type="text"
+                id="foodName"
+                placeholder="Food Name"
+                required
+            >
+
+            <select id="foodCategory" required>
+
+                <option value="">Select Category</option>
+
+                <option>Biryani</option>
+
+                <option>Pizza</option>
+
+                <option>Burger</option>
+
+                <option>Chinese</option>
+
+                <option>Drinks</option>
+
+                <option>Dessert</option>
+
+                <option>Other</option>
+
+            </select>
+
+            <input
+                type="number"
+                id="foodPrice"
+                placeholder="Price"
+                required
+            >
+
+            <input
+                type="text"
+                id="foodImage"
+                placeholder="Image URL"
+                required
+            >
+
+            <textarea
+                id="foodDescription"
+                placeholder="Description"
+                rows="4"
+            ></textarea>
+
+            <button id="submitBtn" type="submit">
+
+                <i class="fa-solid fa-plus"></i>
+
+                Add Food
+
+            </button>
+
+        </form>
+
+    </div>
+
+    <div class="right">
+
+        <h2>Food List</h2>
+
+        <div id="foodContainer">
+
+        </div>
+
+    </div>
+
+</section>
+
+<script src="admin-food.js"></script>
+
+</body>
+
+</html>

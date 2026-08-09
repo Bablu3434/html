@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Royal Stay Hotel | Admin Dashboard</title>
+
+    <link rel="stylesheet" href="admin-dashboard.css">
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+</head>
+
+<body>
+
+<header>
+
+    <h1>👨‍💼 Royal Stay Hotel Admin Dashboard</h1>
+
+</header>
+
+<section class="dashboard">
+
+    <div class="card">
+
+        <i class="fa-solid fa-burger"></i>
+
+        <h2>Total Foods</h2>
+
+        <h1 id="totalFoods">0</h1>
+
+    </div>
+
+    <div class="card">
+
+        <i class="fa-solid fa-cart-shopping"></i>
+
+        <h2>Total Orders</h2>
+
+        <h1 id="totalOrders">0</h1>
+
+    </div>
+
+    <div class="card">
+
+        <i class="fa-solid fa-users"></i>
+
+        <h2>Total Users</h2>
+
+        <h1 id="totalUsers">0</h1>
+
+    </div>
+
+    <div class="card">
+
+        <i class="fa-solid fa-indian-rupee-sign"></i>
+
+        <h2>Total Revenue</h2>
+
+        <h1 id="totalRevenue">₹0</h1>
+
+    </div>
+
+</section>
+
+<section class="recent-orders">
+
+    <h2>Recent Orders</h2>
+
+    <table>
+
+        <thead>
+
+            <tr>
+
+                <th>Customer</th>
+                <th>Phone</th>
+                <th>Total</th>
+                <th>Status</th>
+
+            </tr>
+
+        </thead>
+
+        <tbody id="recentOrders">
+
+        </tbody>
+
+    </table>
+
+</section>
+<section class="sales-chart">
+
+    <h2>Sales Overview</h2>
+
+    <canvas id="salesChart"></canvas>
+
+</section>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<script src="admin-dashboard.js"></script>
+
+</body>
+
+</html>

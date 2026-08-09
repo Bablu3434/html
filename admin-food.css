@@ -1,0 +1,256 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
+body{
+    background:#f4f4f4;
+}
+
+/* Navbar */
+
+.navbar{
+    background:#c62828;
+    color:#fff;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 40px;
+}
+
+.navbar ul{
+    display:flex;
+    list-style:none;
+    gap:20px;
+}
+
+.navbar ul li a{
+    color:#fff;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+.navbar ul li a.active{
+    color:#ffd54f;
+}
+
+.logout-btn{
+    background:#fff;
+    color:#c62828;
+    border:none;
+    padding:8px 15px;
+    border-radius:5px;
+    cursor:pointer;
+    font-weight:bold;
+}
+
+/* Layout */
+
+.container{
+    display:grid;
+    grid-template-columns:350px 1fr;
+    gap:25px;
+    padding:30px;
+}
+
+/* Left */
+
+.left{
+
+    background:#fff;
+
+    padding:25px;
+
+    border-radius:10px;
+
+    box-shadow:0 2px 10px rgba(0,0,0,.1);
+
+}
+
+.left h2{
+
+    margin-bottom:20px;
+
+    color:#c62828;
+
+}
+
+.left input,
+.left select,
+.left textarea{
+
+    width:100%;
+
+    padding:12px;
+
+    margin-bottom:15px;
+
+    border:1px solid #ccc;
+
+    border-radius:5px;
+
+}
+
+.left button{
+
+    width:100%;
+
+    padding:12px;
+
+    border:none;
+
+    background:#c62828;
+
+    color:#fff;
+
+    border-radius:5px;
+
+    cursor:pointer;
+
+    font-size:16px;
+
+}
+
+.left button:hover{
+
+    background:#a71d1d;
+
+}
+
+/* Right */
+
+.right{
+
+    background:#fff;
+
+    padding:25px;
+
+    border-radius:10px;
+
+    box-shadow:0 2px 10px rgba(0,0,0,.1);
+
+}
+
+.right h2{
+
+    margin-bottom:20px;
+
+    color:#c62828;
+
+}
+
+/* Food Card */
+
+.food-card{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:20px;
+
+    border:1px solid #ddd;
+
+    border-radius:10px;
+
+    padding:15px;
+
+    margin-bottom:20px;
+
+}
+
+.food-card img{
+
+    width:120px;
+
+    height:120px;
+
+    object-fit:cover;
+
+    border-radius:10px;
+
+}
+
+.food-info{
+
+    flex:1;
+
+}
+
+.food-info h3{
+
+    color:#c62828;
+
+    margin-bottom:10px;
+
+}
+
+.food-info p{
+
+    margin:5px 0;
+
+}
+
+.food-actions{
+
+    display:flex;
+
+    gap:10px;
+
+    margin-top:10px;
+
+}
+
+.edit-btn{
+
+    background:#ff9800;
+
+    color:#fff;
+
+    border:none;
+
+    padding:8px 15px;
+
+    border-radius:5px;
+
+    cursor:pointer;
+
+}
+
+.delete-btn{
+
+    background:#e53935;
+
+    color:#fff;
+
+    border:none;
+
+    padding:8px 15px;
+
+    border-radius:5px;
+
+    cursor:pointer;
+
+}
+
+/* Mobile */
+
+@media(max-width:900px){
+
+.container{
+
+grid-template-columns:1fr;
+
+}
+
+.food-card{
+
+flex-direction:column;
+
+text-align:center;
+
+}
+
+}
