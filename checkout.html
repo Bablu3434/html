@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout | Royal Stay Hotel</title>
+
+    <link rel="stylesheet" href="checkout.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <h2>Checkout</h2>
+
+    <form id="checkoutForm">
+        <input
+    type="text"
+    id="customerName"
+    placeholder="Customer Name"
+    readonly>
+
+        <input
+            type="text"
+            id="address"
+            placeholder="Enter Delivery Address"
+            required>
+
+        <input
+            type="text"
+            id="phone"
+            placeholder="Enter Mobile Number"
+            required>
+
+        <select id="paymentMethod">
+
+    <option value="COD">
+        Cash On Delivery (COD)
+    </option>
+
+    <option value="PHONEPE">
+        PhonePe Payment
+    </option>
+
+</select>
+        <button type="submit">
+            Place Order
+        </button>
+
+    </form>
+
+</div>
+
+<script src="checkout.js"></script>
+
+</body>
+
+</html>
