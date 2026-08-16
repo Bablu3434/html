@@ -1,0 +1,451 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    scroll-behavior: smooth;
+}
+
+:root {
+    --bg: #000;
+    --second-bg: #111;
+    --text: #fff;
+    --main: #c74747;
+    --card: #151515;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+}
+
+
+/* ================= NAVBAR ================= */
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background: rgba(0, 0, 0, 0.92);
+}
+
+.navbar {
+    height: 70px;
+    padding: 0 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    color: var(--main);
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.nav-links {
+    display: flex;
+    gap: 40px;
+    list-style: none;
+}
+
+.nav-links a {
+    color: white;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+    color: var(--main);
+}
+
+#themeBtn {
+    width: 45px;
+    height: 45px;
+    border: 2px solid var(--main);
+    border-radius: 50%;
+    background: transparent;
+    color: var(--main);
+    cursor: pointer;
+    font-size: 18px;
+}
+
+
+/* ================= HERO ================= */
+
+.skill-hero {
+    min-height: 52vh;
+    padding: 120px 20px 70px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    background:
+        radial-gradient(
+            circle at center,
+            rgba(199, 71, 71, 0.15),
+            transparent 55%
+        );
+}
+
+.skill-hero > div {
+    max-width: 800px;
+}
+
+.small-title {
+    color: var(--main);
+    letter-spacing: 4px;
+    margin-bottom: 15px;
+}
+
+.skill-hero h1 {
+    font-size: 65px;
+    margin-bottom: 20px;
+}
+
+.skill-hero h1 span {
+    color: var(--main);
+}
+
+.skill-hero p:last-child {
+    color: #aaa;
+    font-size: 18px;
+    line-height: 1.7;
+}
+
+
+/* ================= SECTION ================= */
+
+.skills {
+    padding: 90px 7%;
+}
+
+.section-heading {
+    text-align: center;
+    margin-bottom: 55px;
+}
+
+.section-heading h2 {
+    font-size: 42px;
+}
+
+.section-heading h2 span {
+    color: var(--main);
+}
+
+.section-heading p {
+    color: #888;
+    margin-top: 10px;
+}
+
+
+/* ================= SKILL CARDS ================= */
+
+.skills-container {
+    max-width: 1100px;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+.skill-card {
+    background: var(--card);
+    border: 1px solid #2d2d2d;
+    border-radius: 18px;
+    padding: 30px;
+
+    transition: 0.4s;
+}
+
+.skill-card:hover {
+    transform: translateY(-8px);
+    border-color: var(--main);
+    box-shadow: 0 0 25px rgba(199, 71, 71, 0.15);
+}
+
+
+/* TOP */
+
+.skill-top {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+.skill-top > div:last-child {
+    flex: 1;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.skill-top h3 {
+    font-size: 22px;
+}
+
+.skill-top span {
+    color: var(--main);
+    font-weight: bold;
+}
+
+
+/* ICON */
+
+.skill-icon {
+    width: 60px;
+    height: 60px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 2px solid var(--main);
+    border-radius: 50%;
+
+    color: var(--main);
+    font-size: 28px;
+}
+
+
+/* PROGRESS */
+
+.progress {
+    width: 100%;
+    height: 8px;
+    background: #333;
+    border-radius: 10px;
+    margin: 25px 0 15px;
+    overflow: hidden;
+}
+
+.progress-bar {
+    height: 100%;
+    background: var(--main);
+    border-radius: 10px;
+    box-shadow: 0 0 10px var(--main);
+}
+
+.html-bar {
+    width: 90%;
+}
+
+.css-bar {
+    width: 85%;
+}
+
+.js-bar {
+    width: 75%;
+}
+
+.c-bar {
+    width: 80%;
+}
+
+.java-bar {
+    width: 70%;
+}
+
+.python-bar {
+    width: 75%;
+}
+
+.skill-card p {
+    color: #999;
+    line-height: 1.5;
+}
+
+
+/* ================= OTHER SKILLS ================= */
+
+.other-skills {
+    background: var(--second-bg);
+    padding: 90px 7%;
+}
+
+.other-container {
+    max-width: 1000px;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.other-card {
+    padding: 30px 20px;
+    text-align: center;
+
+    border: 1px solid #333;
+    border-radius: 15px;
+
+    transition: 0.3s;
+}
+
+.other-card:hover {
+    border-color: var(--main);
+    transform: translateY(-8px);
+}
+
+.other-card i {
+    color: var(--main);
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.other-card h3 {
+    font-size: 20px;
+}
+
+
+/* ================= CTA ================= */
+
+.cta {
+    padding: 100px 20px;
+    text-align: center;
+}
+
+.cta h2 {
+    font-size: 45px;
+    margin-bottom: 15px;
+}
+
+.cta h2 span {
+    color: var(--main);
+}
+
+.cta p {
+    color: #aaa;
+    margin-bottom: 30px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 13px 35px;
+
+    border: 2px solid var(--main);
+    border-radius: 30px;
+
+    color: var(--main);
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: var(--main);
+    color: #000;
+    box-shadow: 0 0 20px var(--main);
+}
+
+
+/* ================= FOOTER ================= */
+
+footer {
+    background: #080808;
+    text-align: center;
+    padding: 40px 20px;
+    border-top: 1px solid #222;
+}
+
+footer h2 {
+    color: var(--main);
+    margin-bottom: 20px;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.social-icons a {
+    width: 43px;
+    height: 43px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 2px solid var(--main);
+    border-radius: 50%;
+
+    color: var(--main);
+    font-size: 19px;
+
+    transition: 0.3s;
+}
+
+.social-icons a:hover {
+    background: var(--main);
+    color: #000;
+    transform: translateY(-5px);
+}
+
+footer p {
+    color: #777;
+}
+
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 1000px) {
+
+    .nav-links {
+        gap: 20px;
+    }
+
+    .skills-container {
+        grid-template-columns: 1fr;
+    }
+
+    .other-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+@media (max-width: 768px) {
+
+    .nav-links {
+        display: none;
+    }
+
+    .skill-hero h1 {
+        font-size: 45px;
+    }
+}
+
+
+@media (max-width: 500px) {
+
+    .logo {
+        font-size: 24px;
+    }
+
+    .skill-hero h1 {
+        font-size: 36px;
+    }
+
+    .section-heading h2 {
+        font-size: 34px;
+    }
+
+    .other-container {
+        grid-template-columns: 1fr;
+    }
+
+    .skill-card {
+        padding: 25px 20px;
+    }
+}
